@@ -1,0 +1,18 @@
+<mat-card class="city-overlay" *ngIf="position!=null">
+    <mat-card-title class="card-title">
+        <div class="pad-down">
+            <span>{{cityName}}</span>
+        </div>
+        <span class="fill-remaining-space"></span>
+        <div class="divimg">
+            <img mat-card-avatar src="{{currentWeatherIcon}}" class="weather-icon">
+        </div>
+        <div class="pad-down">
+            <span class="span-temperature">{{currentTemperature}}°F</span>
+        </div>
+    </mat-card-title>
+    <mat-card-subtitle>
+        <h2 class="capitalize">{{currentWeather}}</h2>
+    </mat-card-subtitle>
+        
+</mat-card>
